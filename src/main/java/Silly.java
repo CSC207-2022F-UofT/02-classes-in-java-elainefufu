@@ -115,11 +115,11 @@ public class Silly implements Comparable<Silly>{
          *                Fill out the expected_values array with the
          *                values that countStatic will return at each call.
          */
-        x.countStatic();
-        y.countStatic();
-        x.countStatic();
-        x.countStatic();
-        int[] expected_values = new int[]{x.my_static,y.my_static};
+        int a=x.countStatic();
+        int b=y.countStatic();
+        int c=x.countStatic();
+        int d=x.countStatic();
+        int[] expected_values = new int[]{a,b,c,d};
 
         System.out.println("The countStatic calls will return " + Arrays.toString(expected_values));
     }
